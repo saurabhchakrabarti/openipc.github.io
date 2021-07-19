@@ -1,0 +1,1880 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://openipc.github.io/firmware/">
+      
+      <link rel="icon" href="../media/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.1.11">
+    
+    
+      
+        <title>Firmware - OpenIPC docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3754935a.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="OpenIPC docs" class="md-header__button md-logo" aria-label="OpenIPC docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OpenIPC docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Firmware
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/OpenIPC/openipc.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    openipc.github.io/docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Welcome
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../systems_openipc-2.1/" class="md-tabs__link">
+        Our projects
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/" class="md-tabs__link">
+        Language support
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OpenIPC docs" class="md-nav__button md-logo" aria-label="OpenIPC docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    OpenIPC docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/OpenIPC/openipc.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    openipc.github.io/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Our projects
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Our projects" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Our projects
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      <label class="md-nav__link" for="__nav_2_1">
+        Systems
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Systems" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Systems
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../systems_openipc-2.1/" class="md-nav__link">
+        OpenIPC 2.1 (Buildroot)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://openipc.org" class="md-nav__link">
+        OpenIPC 1.0 (OpenWrt)
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      <label class="md-nav__link" for="__nav_2_2">
+        Tools
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Tools" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/OpenIPC/coupler" class="md-nav__link">
+        coupler
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        Utilities
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Utilities" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Utilities
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/OpenIPC/ipctool" class="md-nav__link">
+        ipctool
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/OpenIPC/yaml-cli" class="md-nav__link">
+        yaml-cli
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Language support
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Language support" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Language support
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/" class="md-nav__link">
+        English
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/ru/" class="md-nav__link">
+        Русский
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#firmware-features" class="md-nav__link">
+    Firmware features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-devices" class="md-nav__link">
+    Supported devices
+  </a>
+  
+    <nav class="md-nav" aria-label="Supported devices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openipc-10-openwrt-based" class="md-nav__link">
+    OpenIPC 1.0 (OpenWRT based)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openipc-21-buildroot-based" class="md-nav__link">
+    OpenIPC 2.1 (Buildroot based)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-interface" class="md-nav__link">
+    Web interface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#majestic-streamer" class="md-nav__link">
+    Majestic streamer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera-related-urls-in-firmware" class="md-nav__link">
+    Camera related URLs in firmware
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-data" class="md-nav__link">
+    Statistical data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-firmware" class="md-nav__link">
+    Getting firmware
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting firmware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#downloads-latest-dev" class="md-nav__link">
+    Downloads (latest dev)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#releases" class="md-nav__link">
+    Releases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#source-code" class="md-nav__link">
+    Source code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-from-source" class="md-nav__link">
+    Building from source
+  </a>
+  
+    <nav class="md-nav" aria-label="Building from source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-on-linux-machine" class="md-nav__link">
+    Build on Linux machine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-docker-for-building" class="md-nav__link">
+    Use Docker for building
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparing-to-install" class="md-nav__link">
+    Preparing to install
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparing to install">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-access-to-u-boot" class="md-nav__link">
+    Get access to U-boot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-original-mac" class="md-nav__link">
+    Backup original MAC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-original-firmware" class="md-nav__link">
+    Backup original firmware
+  </a>
+  
+    <nav class="md-nav" aria-label="Backup original firmware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8m-flash" class="md-nav__link">
+    8M Flash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16m-flash" class="md-nav__link">
+    16M Flash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32m-flash" class="md-nav__link">
+    32M Flash
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flash-and-memory-layout" class="md-nav__link">
+    Flash and memory layout
+  </a>
+  
+    <nav class="md-nav" aria-label="Flash and memory layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openipc-flash-layout" class="md-nav__link">
+    OpenIPC flash layout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kernel-memory-load-addresses" class="md-nav__link">
+    Kernel Memory Load Addresses
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flashing-new-firmware" class="md-nav__link">
+    Flashing new firmware
+  </a>
+  
+    <nav class="md-nav" aria-label="Flashing new firmware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hi3516cv100" class="md-nav__link">
+    Hi3516Cv100
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hi3516cv200" class="md-nav__link">
+    Hi3516Cv200
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hi3516cv300" class="md-nav__link">
+    Hi3516Cv300
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hi3516ev100" class="md-nav__link">
+    Hi3516Ev100
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hi3518cv100" class="md-nav__link">
+    Hi3518Cv100
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hi3518ev100" class="md-nav__link">
+    Hi3518Ev100
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hi3518ev200" class="md-nav__link">
+    Hi3518Ev200
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hi3520dv100" class="md-nav__link">
+    Hi3520Dv100
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hi3520dv200" class="md-nav__link">
+    Hi3520Dv200
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-parts-of-the-firmware" class="md-nav__link">
+    Updating parts of the firmware
+  </a>
+  
+    <nav class="md-nav" aria-label="Updating parts of the firmware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-u-boot" class="md-nav__link">
+    Update u-boot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-kernel" class="md-nav__link">
+    Update kernel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-rootfs" class="md-nav__link">
+    Update rootfs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-system-after-installation" class="md-nav__link">
+    Configuring system after installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring system after installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#format-overlayfs-partition" class="md-nav__link">
+    Format overlayfs partition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-original-mac" class="md-nav__link">
+    Installing the original MAC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-correct-sensor" class="md-nav__link">
+    Installing the correct sensor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resetting-configuration" class="md-nav__link">
+    Resetting configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Resetting configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clean-overlayfs-reset" class="md-nav__link">
+    Clean overlayfs (reset)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clean-u-boot-env" class="md-nav__link">
+    Clean u-boot env
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-book" class="md-nav__link">
+    Reference Book
+  </a>
+  
+    <nav class="md-nav" aria-label="Reference Book">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vendors" class="md-nav__link">
+    Vendors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/OpenIPC/openipc.github.io/blob/main/docs/firmware.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Firmware</h1>
+                
+                <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>This page describes OpenWRT-based firmware variant.</p>
+<h3 id="firmware-features">Firmware features<a class="headerlink" href="#firmware-features" title="Permanent link">&para;</a></h3>
+<ul>
+<li>RTSP, ONVIF, NETIP</li>
+<li>Native ipeye service support</li>
+<li>Support squashfs, jffs2, overlayfs, cifs, vfat</li>
+<li>Vlan and bridges support</li>
+<li>Standard OPKG package system</li>
+<li>Tiny SNMP daemon</li>
+<li>Curl with SSL for upload/download files</li>
+<li>Run arbitrary command from u-boot ENV (linux_cmd=)</li>
+<li>Simple L2/L3 VPN with traffic shaping and compression (vtun)</li>
+<li>Simply sender Telegram bot (estgb)</li>
+<li>Low cost  3G USB modems support in hilink and ppp modes</li>
+<li>µVPN tunnel service</li>
+<li>and more ...</li>
+</ul>
+<h3 id="supported-devices">Supported devices<a class="headerlink" href="#supported-devices" title="Permanent link">&para;</a></h3>
+<p>We aim to develop <strong>universal</strong>, portable firmware supporting wide range of
+manufacturers and delivering updates and fixes which vendors oftentimes
+unable to deliver.</p>
+<p>The list is constantly updated, please visit often and/or follow our
+Telegram groups for new release notifications.</p>
+<h4 id="openipc-10-openwrt-based">OpenIPC 1.0 (OpenWRT based)<a class="headerlink" href="#openipc-10-openwrt-based" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Processor</th>
+<th>Sensor</th>
+<th>Vendor</th>
+<th>SKU</th>
+<th>Board</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hi3516Cv100</td>
+<td>IMX222_spi_dc</td>
+<td>XM</td>
+<td></td>
+<td><a href="https://aliexpress.com/item/32493067946.html">BLK18C-0222-38X38_S-V1.03</a></td>
+<td>test</td>
+</tr>
+<tr>
+<td>Hi3518Ev100</td>
+<td>OV9712_i2c_dc</td>
+<td>CamHi/Xin</td>
+<td></td>
+<td>IPC18E_9712_V2.0/V3.1</td>
+<td>test</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Hi3516Cv200</td>
+<td>IMX323_i2c_dc</td>
+<td>XM</td>
+<td></td>
+<td>BLK16CV-0323-38X38-V1.01</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3516Cv200</td>
+<td>IMX323_i2c_dc</td>
+<td>JVT</td>
+<td>S323H16VF</td>
+<td>IPS323-H16V-38X38-V2</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3516Cv200</td>
+<td>IMX323_i2c_mipi</td>
+<td>XM</td>
+<td></td>
+<td></td>
+<td>?</td>
+</tr>
+<tr>
+<td>Hi3518Ev200</td>
+<td>AR0130_i2c_dc</td>
+<td>XM</td>
+<td></td>
+<td>BLK18EV-0732-0035-38X38-V1.01</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3518Ev200</td>
+<td>JXF22_i2c_dc</td>
+<td>XM</td>
+<td></td>
+<td>BLK18EV-0002-2035-38X38-V1.01</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3518Ev200</td>
+<td>JXF22_i2c_dc</td>
+<td>XM</td>
+<td></td>
+<td>BLK18EV-0022-0130-38X38-V1.01</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3518Ev200</td>
+<td>OV2735_i2c_dc</td>
+<td>Dahua</td>
+<td>DH-IPC-C22P</td>
+<td>E305654 JX02 94V-0</td>
+<td>wip</td>
+</tr>
+<tr>
+<td>Hi3518Ev200</td>
+<td>OV9732_</td>
+<td>XM</td>
+<td></td>
+<td>BLK18EV-0732-0035-38X38-V1.01</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3518Ev200</td>
+<td>OV9732_i2c_dc</td>
+<td>Longse/HS</td>
+<td>LS-IP100/40</td>
+<td>3518EV200-OV9732-V1.0</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3518Ev200</td>
+<td>OV9732_i2c_dc</td>
+<td>Rostelecom</td>
+<td>QVC-IPC-136W</td>
+<td>E305654 JX02 94V-0</td>
+<td>wip</td>
+</tr>
+<tr>
+<td>Hi3518Ev200</td>
+<td>SC2135_i2c_dc</td>
+<td>XM</td>
+<td></td>
+<td>BLK18EV-0035-0042-38X38_S-V1.01</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3518Ev200</td>
+<td>SC2235_i2c_dc</td>
+<td>XM</td>
+<td></td>
+<td>BLK18EV-0235-38X38-B-V1.01</td>
+<td>yes</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Hi3516Cv300</td>
+<td>AR0237_i2c_dc</td>
+<td>XM</td>
+<td></td>
+<td>BLK16CV3-0237P-38X38-S-V1.01</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3516Cv300</td>
+<td>IMX307_i2c_lvds</td>
+<td>Raysharp</td>
+<td></td>
+<td>RS-CM-188D 2018-03-16 E150111</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3516Cv300</td>
+<td>IMX323_i2c_dc</td>
+<td>Longse/HS</td>
+<td></td>
+<td>HI3516CV300-IMX323-POE-TF V1.1</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3516Cv300</td>
+<td>IMX323_i2c_dc</td>
+<td>Sunywo</td>
+<td>ZB6323</td>
+<td>IPG5020A-T-N6-V0.1</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3516Cv300</td>
+<td>IMX323_i2c_dc</td>
+<td>XM</td>
+<td></td>
+<td><a href="https://aliexpress.com/item/32851596596.html">IVG-HP201Y-AE</a></td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3516Cv300</td>
+<td>IMX291_i2c_lvds</td>
+<td>XM</td>
+<td></td>
+<td><a href="https://aliexpress.com/item/1005002315913099.html">IVG-HP203Y-AE</a></td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3516Cv300</td>
+<td>IMX323_spi_dc</td>
+<td>JVT</td>
+<td>S323H16XF</td>
+<td>IPS323-H16X-38X38-V2/V3</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3516Cv300</td>
+<td>JXF22_i2c_dc</td>
+<td>XM</td>
+<td></td>
+<td>BLK16CV3-0022-38X38-S-V1.01</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3516Ev100</td>
+<td>IMX323_i2c_dc</td>
+<td>XM</td>
+<td></td>
+<td>BLK16E-0323-38X38-B-V1.01</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3516Ev100</td>
+<td>SC2235P_i2c_dc</td>
+<td>XM</td>
+<td>80HE20PS-S</td>
+<td>BLK16E-0235-38X38-S-V2.03</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<h4 id="openipc-21-buildroot-based">OpenIPC 2.1 (Buildroot based)<a class="headerlink" href="#openipc-21-buildroot-based" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Processor</th>
+<th>Sensor</th>
+<th>Vendor</th>
+<th>SKU</th>
+<th>Board</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hi3516Ev200</td>
+<td>IMX307_i2c_mipi</td>
+<td>XM</td>
+<td></td>
+<td><a href="https://aliexpress.com/item/1005002298832047.html">IVG-85HF20PY-S</a></td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3516Ev200</td>
+<td>SC4239P_i2c_mipi</td>
+<td>XM</td>
+<td></td>
+<td><a href="https://aliexpress.com/item/4000119561119.html">IVG-85HF30PS-S</a></td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hi3516Ev300</td>
+<td>IMX335_i2c_mipi</td>
+<td>XM</td>
+<td></td>
+<td><a href="https://aliexpress.com/item/4000054902736.html">IVG-85HG50PYA-S</a></td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SSC335</td>
+<td>SC3335</td>
+<td></td>
+<td></td>
+<td><a href="https://aliexpress.com/item/1005001934045796.html">Unknown</a></td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>More information about sensors (translated from Russian automatically) - <a href="https://translate.google.com/translate?sl=ru&amp;tl=en&amp;u=https://www.cctvsp.ru/articles/obzor-i-sravnenie-matrits-dlya-kamer-videonablyudeniya">https://cctvsp.ru</a></p>
+<h3 id="web-interface">Web interface<a class="headerlink" href="#web-interface" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://192.168.1.10">http://192.168.1.10</a> - Standard system interface based on OpenWrt Luci</li>
+</ul>
+<h3 id="majestic-streamer">Majestic streamer<a class="headerlink" href="#majestic-streamer" title="Permanent link">&para;</a></h3>
+<p>Majestic is a video streaming application, the heart of our firmware (in
+relation to camera/video surveillance functionality). It's configurable
+via file <code>/etc/majestic.yaml</code> and by default has many features/services
+enabled. Unneded options can be turned off for better security and
+performance.</p>
+<p>To run <code>majestic</code> in debug mode:</p>
+<div class="highlight"><pre><span></span><code>killall -sigint majestic; export SENSOR=$(ipctool --sensor_id); majestic
+</code></pre></div>
+<p>To run <code>majestic</code> in production mode restart the camera or run command:</p>
+<div class="highlight"><pre><span></span><code>killall -sigint majestic; export SENSOR=$(ipctool --sensor_id); majestic 2&gt;&amp;1 | logger -p daemon.info -t majestic &amp;
+</code></pre></div>
+<h3 id="camera-related-urls-in-firmware">Camera related URLs in firmware<a class="headerlink" href="#camera-related-urls-in-firmware" title="Permanent link">&para;</a></h3>
+<p>With firmware running, you can access the camera using URLs below
+(192.168.1.10 is the default IP address):</p>
+<ul>
+<li><a href="http://192.168.1.10:8888">http://192.168.1.10:8888</a> - HLS live streaming</li>
+<li><a href="http://192.168.1.10:8888/image.jpg">http://192.168.1.10:8888/image.jpg</a> - JPEG image shapshot</li>
+<li><a href="http://192.168.1.10:8888/image.heif">http://192.168.1.10:8888/image.heif</a> - <a href="https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format">HEIF</a> image snapshot</li>
+<li><a href="http://192.168.1.10:8888/image.jpg?width=640&amp;height=360&amp;qfactor=73&amp;color2gray=1">http://192.168.1.10:8888/image.jpg?width=640&amp;height=360&amp;qfactor=73&amp;color2gray=1</a></li>
+<li><a href="http://192.168.1.10:8888/image.dng">http://192.168.1.10:8888/image.dng</a> - snapshot from sensor in RAW (Adobe DNG) format (only for v2/v3 HiSilicon processors)</li>
+<li><a href="http://192.168.1.10:8888/mjpeg.html">http://192.168.1.10:8888/mjpeg.html</a> - MJPEG &amp; MP3 streaming</li>
+<li><a href="http://192.168.1.10:8888/video.mp4">http://192.168.1.10:8888/video.mp4</a> - fMP4 video</li>
+<li><a href="http://192.168.1.10:8888/audio.mp3">http://192.168.1.10:8888/audio.mp3</a> - MP3 audio stream</li>
+<li><a href="http://192.168.1.10:8888/audio.pcm">http://192.168.1.10:8888/audio.pcm</a> - Raw PCM audio stream</li>
+<li><a href="rtsp://192.168.1.10:554/stream=0">rtsp://192.168.1.10:554/stream=0</a> - Main channel of RTSP stream (section "video0:" in config )</li>
+<li><a href="rtsp://192.168.1.10:554/stream=1">rtsp://192.168.1.10:554/stream=1</a> - Second channel RTSP streamer (section "video1:" in config )</li>
+</ul>
+<h3 id="statistical-data">Statistical data<a class="headerlink" href="#statistical-data" title="Permanent link">&para;</a></h3>
+<p>Software might do product usage data collection including SoC and sensor model name to gather statistics used in QA process. </p>
+<p>We guaranty that the data is fully anonymized, and does not contain anything that can arguably be considered data about an individual, that could be considered end-user data; or that could be sensitive or confidential to users.</p>
+<h2 id="getting-firmware">Getting firmware<a class="headerlink" href="#getting-firmware" title="Permanent link">&para;</a></h2>
+<h3 id="downloads-latest-dev">Downloads (latest dev)<a class="headerlink" href="#downloads-latest-dev" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Building status</th>
+<th>SoC</th>
+<th>U-Boot</th>
+<th>Kernel</th>
+<th>Rootfs</th>
+<th>Maintainer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Hi3516Cv100 images" src="https://github.com/openipc/chaos_calmer/actions/workflows/hi3516cv100_images.yml/badge.svg?branch=master" /></td>
+<td>Hi3516CV100</td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-16cv100-u-boot.bin">uboot</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-16cv100-default-uImage">kernel</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-16cv100-default-root.squashfs">rootfs</a></td>
+<td>IZ+SS+DI</td>
+</tr>
+<tr>
+<td><img alt="Hi3516Cv200 images" src="https://github.com/openipc/chaos_calmer/actions/workflows/hi3516cv200_images.yml/badge.svg?branch=master" /></td>
+<td>Hi3516CV200</td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-16cv200-u-boot.bin">uboot</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-16cv200-default-uImage">kernel</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-16cv200-default-root.squashfs">rootfs</a></td>
+<td>IZ</td>
+</tr>
+<tr>
+<td><img alt="Hi3516Cv300 images" src="https://github.com/openipc/chaos_calmer/actions/workflows/hi3516cv300_images.yml/badge.svg?branch=master" /></td>
+<td>Hi3516CV300</td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-16cv300-u-boot.bin">uboot</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-16cv300-default-uImage">kernel</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-16cv300-default-root.squashfs">rootfs</a></td>
+<td>IZ+DI</td>
+</tr>
+<tr>
+<td><img alt="Hi3516Ev100 images" src="https://github.com/openipc/chaos_calmer/actions/workflows/hi3516cv300_images.yml/badge.svg?branch=master" /></td>
+<td>Hi3516EV100</td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-16ev100-u-boot.bin">uboot</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-16ev100-default-uImage">kernel</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-16ev100-default-root.squashfs">rootfs</a></td>
+<td>IZ+DI</td>
+</tr>
+<tr>
+<td><img alt="Hi3518Av100 images" src="https://github.com/openipc/chaos_calmer/actions/workflows/hi3516cv100_images.yml/badge.svg?branch=master" /></td>
+<td>Hi3518AV100</td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18av100-u-boot.bin">uboot</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18av100-default-uImage">kernel</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18av100-default-root.squashfs">rootfs</a></td>
+<td>IZ+SS+DI</td>
+</tr>
+<tr>
+<td><img alt="Hi3518Cv100 images" src="https://github.com/openipc/chaos_calmer/actions/workflows/hi3516cv100_images.yml/badge.svg?branch=master" /></td>
+<td>Hi3518CV100</td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18cv100-u-boot.bin">uboot</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18cv100-default-uImage">kernel</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18cv100-default-root.squashfs">rootfs</a></td>
+<td>IZ+SS+DI</td>
+</tr>
+<tr>
+<td><img alt="Hi3518Ev100 images" src="https://github.com/openipc/chaos_calmer/actions/workflows/hi3516cv100_images.yml/badge.svg?branch=master" /></td>
+<td>Hi3518EV100</td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18ev100-u-boot.bin">uboot</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18ev100-default-uImage">kernel</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18ev100-default-root.squashfs">rootfs</a></td>
+<td>IZ+SS+DI</td>
+</tr>
+<tr>
+<td><img alt="Hi3518Ev200 images" src="https://github.com/openipc/chaos_calmer/actions/workflows/hi3516cv200_images.yml/badge.svg?branch=master" /></td>
+<td>Hi3518EV200</td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18ev200-u-boot.bin">uboot</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18ev200-default-uImage">kernel</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18ev200-default-root.squashfs">rootfs</a></td>
+<td>IZ</td>
+</tr>
+<tr>
+<td><img alt="Hi3518Ev201 images" src="https://github.com/openipc/chaos_calmer/actions/workflows/hi3516cv200_images.yml/badge.svg?branch=master" /></td>
+<td>Hi3518EV201</td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18ev201-u-boot.bin">uboot</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18ev201-default-uImage">kernel</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-18ev201-default-root.squashfs">rootfs</a></td>
+<td>IZ</td>
+</tr>
+<tr>
+<td><img alt="Hi3520Dv100 images" src="https://github.com/openipc/chaos_calmer/actions/workflows/hi3520dv200_images.yml/badge.svg?branch=master" /></td>
+<td>Hi3520DV100</td>
+<td>!</td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-20dv100-default-uImage">kernel</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-20dv100-default-root.squashfs">rootfs</a></td>
+<td>IZ</td>
+</tr>
+<tr>
+<td><img alt="Hi3520Dv200 images" src="https://github.com/openipc/chaos_calmer/actions/workflows/hi3520dv200_images.yml/badge.svg?branch=master" /></td>
+<td>Hi3520DV200</td>
+<td>!</td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-20dv200-default-uImage">kernel</a></td>
+<td><a href="https://github.com/OpenIPC/chaos_calmer/releases/download/latest/openwrt-hi35xx-20dv200-default-root.squashfs">rootfs</a></td>
+<td>IZ</td>
+</tr>
+</tbody>
+</table>
+<h3 id="releases">Releases<a class="headerlink" href="#releases" title="Permanent link">&para;</a></h3>
+<p>The <strong>releases</strong> of the OpenIPC firmware is hosted at https://github.com/OpenIPC/chaos_calmer/releases</p>
+<h3 id="source-code">Source code<a class="headerlink" href="#source-code" title="Permanent link">&para;</a></h3>
+<p>The <strong>source code</strong> of the OpenIPC firmware is hosted at https://github.com/openipc/chaos_calmer</p>
+<h2 id="building-from-source">Building from source<a class="headerlink" href="#building-from-source" title="Permanent link">&para;</a></h2>
+<h3 id="build-on-linux-machine">Build on Linux machine<a class="headerlink" href="#build-on-linux-machine" title="Permanent link">&para;</a></h3>
+<p>Usage example for Debian 8/9</p>
+<div class="highlight"><pre><span></span><code>git clone --depth<span class="o">=</span><span class="m">1</span> https://github.com/OpenIPC/chaos_calmer.git OpenIPC
+<span class="nb">cd</span> OpenIPC
+./Project_OpenIPC.sh update
+./Project_OpenIPC.sh 16cv300_DEFAULT
+</code></pre></div>
+<h3 id="use-docker-for-building">Use Docker for building<a class="headerlink" href="#use-docker-for-building" title="Permanent link">&para;</a></h3>
+<p><strong>Default Dockerfile.openipc</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">FROM</span> <span class="s">debian:stretch</span>
+
+<span class="k">RUN</span> <span class="nv">DEBIAN_FRONTEND</span><span class="o">=</span>noninteractive apt-get update <span class="se">\</span>
+    <span class="o">&amp;&amp;</span> apt-get --no-install-recommends -y install bc bison build-essential <span class="se">\</span>
+    ca-certificates cmake cpio curl dos2unix file flex gawk gcc-multilib <span class="se">\</span>
+    gettext gettext-base git intltool libc6-dev liblocale-gettext-perl <span class="se">\</span>
+    libncurses-dev libssl-dev locales mc openssl python rsync subversion <span class="se">\</span>
+    <span class="nb">time</span> tofrodos unzip upx wget zlib1g-dev <span class="se">\</span>
+    <span class="o">&amp;&amp;</span> localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias <span class="se">\</span>
+    en_US.UTF-8 <span class="o">&amp;&amp;</span> rm -rf /var/lib/apt/lists/*
+
+<span class="k">ENV</span> LANG en_US.utf8
+
+<span class="k">WORKDIR</span><span class="s"> /src/openipc</span>
+
+<span class="k">RUN</span> git clone --depth<span class="o">=</span><span class="m">1</span> https://github.com/OpenIPC/chaos_calmer.git /src/openipc
+<span class="k">RUN</span> ./Project_OpenIPC.sh update
+<span class="k">RUN</span> ./Project_OpenIPC.sh 18ev200_DEFAULT  # &lt;<span class="o">=</span> Change this ID to you profile
+</code></pre></div>
+<p><strong>Start building</strong></p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+
+docker build -t openipc -f Dockerfile.openipc .
+</code></pre></div>
+<h2 id="preparing-to-install">Preparing to install<a class="headerlink" href="#preparing-to-install" title="Permanent link">&para;</a></h2>
+<h3 id="get-access-to-u-boot">Get access to U-boot<a class="headerlink" href="#get-access-to-u-boot" title="Permanent link">&para;</a></h3>
+<p>Serial (UART) connection to your camera device is required.</p>
+<ul>
+<li>Dahua | Press <strong>Shift 8</strong> in U-boot start</li>
+<li>JVT | Press <strong>Ctrl+Q</strong> in U-boot start</li>
+<li>XM | Press <strong>Ctrl+C</strong> in U-boot start</li>
+<li>SigmaStar | Press <strong>Ctrl+B</strong> (UNIV) or <strong>Enter</strong> (Anjvision) in U-boot start</li>
+</ul>
+<h3 id="backup-original-mac">Backup original MAC<a class="headerlink" href="#backup-original-mac" title="Permanent link">&para;</a></h3>
+<p>You should definitely write the original MAC of your device on the eth0 port.</p>
+<p>This is <strong>important</strong> and will be necessary at the final stage of device configuration.</p>
+<h3 id="backup-original-firmware">Backup original firmware<a class="headerlink" href="#backup-original-firmware" title="Permanent link">&para;</a></h3>
+<h4 id="8m-flash">8M Flash<a class="headerlink" href="#8m-flash" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>setenv ipaddr 192.168.1.10
+setenv serverip 192.168.1.254
+sf probe 0
+mw.b 0x82000000 ff 1000000
+sf read 0x82000000 0x0 0x800000
+tftp 0x82000000 fullflash.img 0x800000
+</code></pre></div>
+<h4 id="16m-flash">16M Flash<a class="headerlink" href="#16m-flash" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>setenv ipaddr 192.168.1.10
+setenv serverip 192.168.1.254
+sf probe 0
+mw.b 0x82000000 ff 1000000
+sf read 0x82000000 0x0 0x1000000
+tftp 0x82000000 fullflash.img 0x1000000
+</code></pre></div>
+<h4 id="32m-flash">32M Flash<a class="headerlink" href="#32m-flash" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>setenv ipaddr 192.168.1.10
+setenv serverip 192.168.1.254
+sf probe 0
+mw.b 0x82000000 ff 2000000
+sf read 0x82000000 0x0 0x2000000
+tftp 0x82000000 fullflash.img 0x2000000
+</code></pre></div>
+<h3 id="flash-and-memory-layout">Flash and memory layout<a class="headerlink" href="#flash-and-memory-layout" title="Permanent link">&para;</a></h3>
+<p>We have developed a universal partition system for camera flash chips
+and it is now available as standard for all types of devices. (Note
+that it means it likely doesn't match vendor flash layout.)</p>
+<h4 id="openipc-flash-layout">OpenIPC flash layout<a class="headerlink" href="#openipc-flash-layout" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>0x000000000000-0x000000040000 : &quot;boot&quot;
+0x000000040000-0x000000050000 : &quot;env&quot;
+0x000000050000-0x000000250000 : &quot;kernel&quot;
+0x000000250000-0x000000750000 : &quot;rootfs&quot;
+0x000000750000-0x000001000000 : &quot;rootfs_data&quot;
+</code></pre></div>
+<h4 id="kernel-memory-load-addresses">Kernel Memory Load Addresses<a class="headerlink" href="#kernel-memory-load-addresses" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>loadaddr-$(CONFIG_TARGET_hi35xx_16cv100) := 0x80008000
+loadaddr-$(CONFIG_TARGET_hi35xx_16cv200) := 0x80008000
+loadaddr-$(CONFIG_TARGET_hi35xx_16cv300) := 0x80008000
+loadaddr-$(CONFIG_TARGET_hi35xx_16dv100) := 0x80008000
+loadaddr-$(CONFIG_TARGET_hi35xx_16ev100) := 0x80008000
+loadaddr-$(CONFIG_TARGET_hi35xx_16ev200) := 0x40008000
+loadaddr-$(CONFIG_TARGET_hi35xx_16ev300) := 0x40008000
+loadaddr-$(CONFIG_TARGET_hi35xx_18cv100) := 0x80008000
+loadaddr-$(CONFIG_TARGET_hi35xx_18ev100) := 0x80008000
+loadaddr-$(CONFIG_TARGET_hi35xx_18ev200) := 0x80008000
+loadaddr-$(CONFIG_TARGET_hi35xx_18ev201) := 0x80008000
+loadaddr-$(CONFIG_TARGET_hi35xx_18ev300) := 0x40008000
+loadaddr-$(CONFIG_TARGET_hi35xx_20dv100) := 0x80008000
+loadaddr-$(CONFIG_TARGET_hi35xx_20dv200) := 0x80008000
+</code></pre></div>
+<h2 id="flashing-new-firmware">Flashing new firmware<a class="headerlink" href="#flashing-new-firmware" title="Permanent link">&para;</a></h2>
+<p><strong>Attention !</strong></p>
+<p>All examples indicate the download of firmware components via the TFTP server. 
+If your device does not have an Ethernet port, replace in all lines the <strong>tftp</strong> command everywhere with <strong>fatload mmc 0:1</strong> For example:</p>
+<div class="highlight"><pre><span></span><code>tftp 0x82000000 openwrt-hi35xx-XXXXX-u-boot.bin
+#
+fatload mmc 0:1 0x82000000 openwrt-hi35xx-XXXXX-u-boot.bin
+</code></pre></div>
+<h3 id="hi3516cv100">Hi3516Cv100<a class="headerlink" href="#hi3516cv100" title="Permanent link">&para;</a></h3>
+<p><strong>This type of board has additional Ethernet control systems via GPIO and registers. Consult with experts !</strong></p>
+<p><strong>Experimental devices:</strong></p>
+<ul>
+<li>00:12:16:FA:F3:52</li>
+<li>00:12:12:10:31:54 - BLK18C_0222_38x38_S_v1.03</li>
+</ul>
+<div class="highlight"><pre><span></span><code>setenv ipaddr 192.168.1.10
+setenv serverip 192.168.1.254
+sf probe 0; sf lock 0
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16cv100-u-boot.bin
+sf erase 0x0 0x50000
+sf write 0x82000000 0x0 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16cv100-default-uImage
+sf erase 0x50000 0x200000
+sf write 0x82000000 0x50000 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16cv100-default-root.squashfs
+sf erase 0x250000 0x500000
+sf write 0x82000000 0x250000 ${filesize}
+</code></pre></div>
+<h3 id="hi3516cv200">Hi3516Cv200<a class="headerlink" href="#hi3516cv200" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>setenv ipaddr 192.168.1.10
+setenv serverip 192.168.1.254
+sf probe 0; sf lock 0
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16cv200-u-boot.bin
+sf erase 0x0 0x50000
+sf write 0x82000000 0x0 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16cv200-default-uImage
+sf erase 0x50000 0x200000
+sf write 0x82000000 0x50000 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16cv200-default-root.squashfs
+sf erase 0x250000 0x500000
+sf write 0x82000000 0x250000 ${filesize}
+</code></pre></div>
+<h3 id="hi3516cv300">Hi3516Cv300<a class="headerlink" href="#hi3516cv300" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>setenv ipaddr 192.168.1.10
+setenv serverip 192.168.1.254
+sf probe 0; sf lock 0
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16cv300-u-boot.bin
+sf erase 0x0 0x50000
+sf write 0x82000000 0x0 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16cv300-default-uImage
+sf erase 0x50000 0x200000
+sf write 0x82000000 0x50000 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16cv300-default-root.squashfs
+sf erase 0x250000 0x500000
+sf write 0x82000000 0x250000 ${filesize}
+</code></pre></div>
+<h3 id="hi3516ev100">Hi3516Ev100<a class="headerlink" href="#hi3516ev100" title="Permanent link">&para;</a></h3>
+<p><strong>Experimental devices:</strong></p>
+<ul>
+<li>00:12:13:02:d7:2c</li>
+</ul>
+<div class="highlight"><pre><span></span><code>setenv ipaddr 192.168.1.10
+setenv serverip 192.168.1.254
+sf probe 0; sf lock 0
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16ev100-u-boot.bin
+sf erase 0x0 0x50000
+sf write 0x82000000 0x0 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16cv300-default-uImage
+sf erase 0x50000 0x200000
+sf write 0x82000000 0x50000 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16cv300-default-root.squashfs
+sf erase 0x250000 0x500000
+sf write 0x82000000 0x250000 ${filesize}
+</code></pre></div>
+<h3 id="hi3518cv100">Hi3518Cv100<a class="headerlink" href="#hi3518cv100" title="Permanent link">&para;</a></h3>
+<p><strong>This type of board has additional Ethernet control systems via GPIO and registers. Consult with experts !</strong></p>
+<div class="highlight"><pre><span></span><code>setenv ipaddr 192.168.1.10
+setenv serverip 192.168.1.254
+sf probe 0; sf lock 0
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-18cv100-u-boot.bin
+sf erase 0x0 0x50000
+sf write 0x82000000 0x0 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16cv100-default-uImage
+sf erase 0x50000 0x200000
+sf write 0x82000000 0x50000 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-16cv100-default-root.squashfs
+sf erase 0x250000 0x500000
+sf write 0x82000000 0x250000 ${filesize}
+</code></pre></div>
+<h3 id="hi3518ev100">Hi3518Ev100<a class="headerlink" href="#hi3518ev100" title="Permanent link">&para;</a></h3>
+<p><strong>This type of board has additional Ethernet control systems via GPIO and registers. Consult with experts !</strong></p>
+<div class="highlight"><pre><span></span><code>setenv ipaddr 192.168.1.10
+setenv serverip 192.168.1.254
+sf probe 0; sf lock 0
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-18ev100-u-boot.bin
+sf erase 0x0 0x50000
+sf write 0x82000000 0x0 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-18ev100-default-uImage
+sf erase 0x50000 0x200000
+sf write 0x82000000 0x50000 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-18ev100-default-root.squashfs
+sf erase 0x250000 0x500000
+sf write 0x82000000 0x250000 ${filesize}
+</code></pre></div>
+<h3 id="hi3518ev200">Hi3518Ev200<a class="headerlink" href="#hi3518ev200" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>setenv ipaddr 192.168.1.10
+setenv serverip 192.168.1.254
+sf probe 0; sf lock 0
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-18ev200-u-boot.bin
+sf erase 0x0 0x50000
+sf write 0x82000000 0x0 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-18ev200-default-uImage
+sf erase 0x50000 0x200000
+sf write 0x82000000 0x50000 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-18ev200-default-root.squashfs
+sf erase 0x250000 0x500000
+sf write 0x82000000 0x250000 ${filesize}
+</code></pre></div>
+<h3 id="hi3520dv100">Hi3520Dv100<a class="headerlink" href="#hi3520dv100" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>setenv ipaddr 192.168.1.10
+setenv serverip 192.168.1.254
+sf probe 0; sf lock 0
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-20dv100-experimental-u-boot.bin
+sf erase 0x0 0x50000
+sf write 0x82000000 0x0 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-20dv100-default-uImage
+sf erase 0x50000 0x200000
+sf write 0x82000000 0x50000 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-20dv100-default-root.squashfs
+sf erase 0x250000 0x500000
+sf write 0x82000000 0x250000 ${filesize}
+</code></pre></div>
+<h3 id="hi3520dv200">Hi3520Dv200<a class="headerlink" href="#hi3520dv200" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>setenv ipaddr 192.168.1.10
+setenv serverip 192.168.1.254
+sf probe 0; sf lock 0
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-20dv200-experimental-u-boot.bin
+sf erase 0x0 0x50000
+sf write 0x82000000 0x0 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-20dv200-default-uImage
+sf erase 0x50000 0x200000
+sf write 0x82000000 0x50000 ${filesize}
+
+mw.b 0x82000000 ff 1000000
+tftp 0x82000000 openwrt-hi35xx-20dv200-default-root.squashfs
+sf erase 0x250000 0x500000
+sf write 0x82000000 0x250000 ${filesize}
+</code></pre></div>
+<h2 id="updating-parts-of-the-firmware">Updating parts of the firmware<a class="headerlink" href="#updating-parts-of-the-firmware" title="Permanent link">&para;</a></h2>
+<p>If you already have OpenIPC firmware installed, you can update individual
+flash partitions from shell command line:</p>
+<h3 id="update-u-boot">Update u-boot<a class="headerlink" href="#update-u-boot" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>flashcp -v openwrt-hi35xx-XXXXX-u-boot.bin boot
+</code></pre></div>
+<p><strong>or</strong></p>
+<div class="highlight"><pre><span></span><code>flashcp -v openwrt-hi35xx-XXXXX-u-boot.bin /dev/mtd0
+</code></pre></div>
+<h3 id="update-kernel">Update kernel<a class="headerlink" href="#update-kernel" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>flashcp -v openwrt-hi35xx-XXXXX-default-uImage kernel
+</code></pre></div>
+<h3 id="update-rootfs">Update rootfs<a class="headerlink" href="#update-rootfs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>flashcp -v openwrt-hi35xx-XXXXX-default-root.squashfs rootfs
+</code></pre></div>
+<h2 id="configuring-system-after-installation">Configuring system after installation<a class="headerlink" href="#configuring-system-after-installation" title="Permanent link">&para;</a></h2>
+<h3 id="format-overlayfs-partition">Format overlayfs partition<a class="headerlink" href="#format-overlayfs-partition" title="Permanent link">&para;</a></h3>
+<p><strong>Must be executed on first run</strong></p>
+<div class="highlight"><pre><span></span><code>flash_eraseall -j /dev/$(awk -F &#39;:&#39; &#39;/rootfs_data/ {print $1}&#39; /proc/mtd)
+reboot
+</code></pre></div>
+<h3 id="installing-the-original-mac">Installing the original MAC<a class="headerlink" href="#installing-the-original-mac" title="Permanent link">&para;</a></h3>
+<p><strong>U-boot ENV and Linux UCI</strong></p>
+<div class="highlight"><pre><span></span><code>fw_setenv ethaddr 00:01:02:03:04:05
+uci set network.lan.macaddr=00:01:02:03:04:05
+uci commit
+</code></pre></div>
+<h3 id="installing-the-correct-sensor">Installing the correct sensor<a class="headerlink" href="#installing-the-correct-sensor" title="Permanent link">&para;</a></h3>
+<p><strong>Specify your correct sensor, control type, and data bus</strong></p>
+<div class="highlight"><pre><span></span><code>fw_setenv sensor imx291_i2c_lvds
+</code></pre></div>
+<h2 id="resetting-configuration">Resetting configuration<a class="headerlink" href="#resetting-configuration" title="Permanent link">&para;</a></h2>
+<p>If something went wrong, you can reset configuration to defaults.</p>
+<h3 id="clean-overlayfs-reset">Clean overlayfs (reset)<a class="headerlink" href="#clean-overlayfs-reset" title="Permanent link">&para;</a></h3>
+<p><strong>Restore to default Linux settings</strong></p>
+<div class="highlight"><pre><span></span><code>firstboot
+reboot
+</code></pre></div>
+<h3 id="clean-u-boot-env">Clean u-boot env<a class="headerlink" href="#clean-u-boot-env" title="Permanent link">&para;</a></h3>
+<p><strong>Restore to default u-boot env</strong></p>
+<div class="highlight"><pre><span></span><code>flash_eraseall -j /dev/$(awk -F &#39;:&#39; &#39;/env/ {print $1}&#39; /proc/mtd)
+reboot
+</code></pre></div>
+<h2 id="reference-book">Reference Book<a class="headerlink" href="#reference-book" title="Permanent link">&para;</a></h2>
+<p>To be written...</p>
+<h3 id="vendors">Vendors<a class="headerlink" href="#vendors" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.acti.com/"><strong>ACTi</strong></a></li>
+<li><a href="http://www.anjvision.com/"><strong>Anjvision</strong></a> | http://icamra.cn/</li>
+<li><a href="https://www.ansjer.com/"><strong>Ansjer / ZOSI</strong></a></li>
+<li><a href="http://www.anviz.com"><strong>Anviz</strong></a></li>
+<li><a href="https://brovotech.com/"><strong>Brovotech</strong></a></li>
+<li><a href="http://www.camasmart.com"><strong>Camasmart / Filsion</strong></a></li>
+<li><a href="http://cantonk.com/"><strong>Cantonk</strong></a></li>
+<li><a href="http://www.ccdcam.com"><strong>CCDCAM</strong></a>, maybe a trading house...</li>
+<li><a href="http://www.fsan.cn/"><strong>FSAN</strong></a></li>
+<li><a href="http://www.herospeed.net/en/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=11"><strong>Herospeed / Longse</strong></a></li>
+<li>http://www.ipcam.xin/</li>
+<li><a href="http://www.jovision.com/"><strong>Jovision</strong></a></li>
+<li>http://www.jvt.cc/English/about.html</li>
+<li><a href="http://www.lenoteltechnology.com/"><strong>LENOTEL</strong></a>, maybe a trading house...</li>
+<li><a href="http://www.longse.com/"><strong>Longse / Herospeed</strong></a></li>
+<li><a href="http://www.milesight.com/product/product_menu"><strong>Milesight</strong></a></li>
+<li><a href="http://raysharp.cn/en/index.html"><strong>Raysharp</strong></a></li>
+<li><a href="http://www.ruision.com/col/70560?lang=en"><strong>Ruision</strong></a></li>
+<li><a href="http://www.safer.net.cn/"><strong>Safer</strong></a>, maybe a hardware assembler...</li>
+<li>http://www.sunywo.com/cn/index.shtml</li>
+<li><a href="http://en.tiandy.com/"><strong>Tiandy</strong></a></li>
+<li><a href="http://www.en.tpsee.com/"><strong>Topsee</strong></a></li>
+<li><a href="http://www.tvt.net.cn/"><strong>TVT</strong></a></li>
+<li><a href="http://uniview.com"><strong>UNIVIEW</strong></a></li>
+<li><a href="http://vandsec.com/"><strong>VandSec / Yoosee</strong></a>, maybe a trading house...</li>
+<li><a href="http://www.vstarcam.com"><strong>VStarcam</strong></a>, maybe a trading house...</li>
+<li><a href="http://wansview.com"><strong>Wansview</strong></a></li>
+<li><a href="http://www.xiongmaitech.com/en/index.php"><strong>XM</strong></a></li>
+<li><a href="http://www.z-ben.cn"><strong>Z-BEN</strong></a>, maybe a trading house...</li>
+<li><a href="https://www.zositech.com/"><strong>ZOSI / Ansjer</strong></a></li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; <a href="https://openipc.org"  target="_blank" rel="noopener">OpenIPC team</a>, 2021
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="mailto:dev@openipc.org" target="_blank" rel="noopener" title="" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M160 448c-25.6 0-51.2-22.4-64-32-64-44.8-83.2-60.8-96-70.4V480c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32V345.6c-12.8 9.6-32 25.6-96 70.4-12.8 9.6-38.4 32-64 32zm128-192H32c-17.67 0-32 14.33-32 32v16c25.6 19.2 22.4 19.2 115.2 86.4 9.6 6.4 28.8 25.6 44.8 25.6s35.2-19.2 44.8-22.4c92.8-67.2 89.6-67.2 115.2-86.4V288c0-17.67-14.33-32-32-32zm256-96H224c-17.67 0-32 14.33-32 32v32h96c33.21 0 60.59 25.42 63.71 57.82l.29-.22V416h192c17.67 0 32-14.33 32-32V192c0-17.67-14.33-32-32-32zm-32 128h-64v-64h64v64zm-352-96c0-35.29 28.71-64 64-64h224V32c0-17.67-14.33-32-32-32H96C78.33 0 64 14.33 64 32v192h96v-32z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://t.me/openipc" target="_blank" rel="noopener" title="t.me" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/openipc" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/openipc" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+    
+  </body>
+</html>
